@@ -1,17 +1,4 @@
-# async-await-all
-async-await-all is a JavaScript library for **asyncMe**, **awaitMe**, **await$**
-
-```js
-asyncMe = async
-
-awaitMe = await
-
-await$  = await Promise.all(promiseArray)
-```
-
-## Examples
-```js
-const { asyncMe, awaitMe, await$ } = require('async-await-all')
+const { asyncMe, awaitMe, await$ } = require('../src')
 
 const sleep = ms => {
   return new Promise(resolve => {
@@ -52,6 +39,7 @@ awaitMeExample(1000)
 
 /*
 
+node ./test
 1... 2017-11-02T07:49:13.636Z
 2... 2017-11-02T07:49:14.643Z
 1000
@@ -61,20 +49,3 @@ awaitMeExample(1000)
 
 */
 
-
-```
-
-## Installation
-
-```
-npm install --save async-await-all
-```
-
-## Usage
-You can import from `async-await-all`:
-
-```js
-import { asyncMe, awaitMe, await$ } from 'async-await-all';
-// or
-const { asyncMe, awaitMe, await$ } = require('async-await-all');
-```
