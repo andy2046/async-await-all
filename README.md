@@ -74,7 +74,10 @@ npm install --save async-await-all
 You can import from `async-await-all`:
 
 ```js
-import { asyncMe, awaitMe, await$ } from 'async-await-all';
+import { asyncMe, awaitMe, await$ } from 'async-await-all'
 // or
-const { asyncMe, awaitMe, await$ } = require('async-await-all');
+const { asyncMe, awaitMe, await$ } = require('async-await-all')
+
+// if you see any issue with node-fibers e.g. There is an issue with `node-fibers`
+// please refer to https://github.com/laverdet/node-fibers#supported-platforms
 ```
